@@ -15,14 +15,12 @@ import java.util.List;
  */
 @Controller
 public class MainController {
-
-
     @Resource
     private StudentService studentService;
 
     @RequestMapping(value = "/home")
     public String frontPage(){
-
+        System.out.println("修改过的哈哈哈");
         return "home";
     }
 
